@@ -5,10 +5,10 @@ const cors = require("cors");
 
 app.use(cors());
 
-// app.get("/", function (req, res) {
-//   res.send("Hello World");
-//   console.log("customer came inside our site!");
-// });
+app.get("/", function (req, res) {
+  res.send("Hello World");
+  console.log("customer came inside our site!");
+});
 
 app.get("/sound/:name", (req, res) => {
   const { name } = req.params;
