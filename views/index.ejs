@@ -8,7 +8,7 @@
   <body>
     <ul>
       <% for (comment of comments) { %>
-      <li><%= comment.id %><%= comment.content %></li>
+      <li><%= comment.content %></li>
       <form action="/update/<%= comment.id%>" method="post">
         <input type="text" name="content" />
         <input type="submit" value="수정하기" />
